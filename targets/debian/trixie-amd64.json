@@ -1,5 +1,6 @@
 {
   "schemaVersion": 2,
+  "status": "ci-baseline",
   "id": "debian-trixie-amd64",
   "base": {
     "distribution": "Debian",
@@ -55,6 +56,5 @@
     "bind9-host",
     "bind9-libs"
   ],
-  "patches": [],
-  "status": "unreleased-development-candidate"
+  "patches": []
 }
