@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "project": {
+    "name": "GetPatched",
+    "repository": "getpatched/packaging-bind9",
+    "description": "Debian Trixie rebuild recipe for BIND 9 DNS tools."
+  },
+  "package": {
+    "source": "bind9",
+    "description": "BIND 9 DNS tools",
+    "upstreamProject": "BIND 9 DNS tools",
+    "upstreamRepository": "https://www.isc.org/downloads/bind/",
+    "copyrightFile": "LICENSES/debian-copyright"
+  },
+  "targets": [
+    {
+      "id": "debian-trixie-amd64",
+      "file": "targets/debian/trixie-amd64.json"
+    }
+  ],
+  "patchMetadata": "patches/metadata.json",
+  "regressionTests": {
+    "fixturesDirectory": "tests/fixtures",
+    "runner": "ci/debian-trixie-amd64/smoke.sh"
+  },
+  "licensing": {
+    "publicContributionsSpdx": "MIT",
+    "publicContributionsLicenseFile": "LICENSE",
+    "fileLicenses": [],
+    "earlyBinaryLicenseId": null,
+    "earlyBinaryTermsFile": null,
+    "upstreamCopyrightFile": "LICENSES/debian-copyright",
+    "upstreamLicenses": "preserve"
+  }
+}
