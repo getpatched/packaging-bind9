@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "status": "ci-baseline",
+  "id": "debian-trixie-amd64",
+  "base": {
+    "distribution": "Debian",
+    "release": "13",
+    "codename": "trixie",
+    "sourcePocket": "security",
+    "architecture": "amd64"
+  },
+  "source": {
+    "format": "3.0 (quilt)",
+    "version": "1:9.20.30-1~deb13u1",
+    "publication": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/",
+    "descriptor": {
+      "name": "bind9_9.20.30-1~deb13u1.dsc",
+      "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/b/bind9/bind9_9.20.30-1~deb13u1.dsc",
+      "sha256": "6a25251ddfc51bd8c23606615fb1e705d1c8cf5a641b8533c8035e7663c92f8e",
+      "bytes": 2953
+    },
+    "files": [
+      {
+        "name": "bind9_9.20.30.orig.tar.xz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/b/bind9/bind9_9.20.30.orig.tar.xz",
+        "sha256": "9e1443a40a72a30272cbc3196d020a6b2e26937111c83e59e101e82e1e3b4fef",
+        "bytes": 6004232,
+        "role": "upstream-source"
+      },
+      {
+        "name": "bind9_9.20.30-1~deb13u1.debian.tar.xz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/b/bind9/bind9_9.20.30-1~deb13u1.debian.tar.xz",
+        "sha256": "32dbfae3ec72ac2f4d64a624bfb650e3d7bd1b4e35dba67ff9d3026d252ed34d",
+        "bytes": 62852,
+        "role": "debian-packaging"
+      }
+    ],
+    "signatureVerification": {
+      "verified": false,
+      "note": "Source pins were selected from the pinned Debian snapshot Sources index. The uploader signature was not separately authenticated."
+    }
+  },
+  "supportedSourceVersions": [
+    "1:9.20.30-1~deb13u1"
+  ],
+  "packageVersion": "1:9.20.30-1~deb13u1+getpatched1",
+  "releaseSerial": 1,
+  "changelog": {
+    "distribution": "trixie",
+    "urgency": "low",
+    "maintainer": "GetPatched Maintainers <packages@getpatched.dev>",
+    "date": "Mon, 16 Nov 2026 08:00:00 +0000"
+  },
+  "binaryPackages": [
+    "bind9-dnsutils",
+    "bind9-host",
+    "bind9-libs"
+  ],
+  "patches": []
+}
